@@ -216,7 +216,7 @@ class WiFiCapability(BaseCapability):
                                  radios={}".format(radios))
         if ret.returncode != 0:
             raise LoadKernelError("unable to load module mac80211_hwsim!!")
-        utils.sleep_time(logger, 5, "loading mac80211_hwsim module")
+        utils.sleep_time(logger, 2, "loading mac80211_hwsim module")
 
     @property
     def description(self):

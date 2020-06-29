@@ -130,7 +130,6 @@ class TestGrpcVirtualHome(unittest.TestCase):
             "created home_id could not find in the cirque service!!")
 
     def test_002_create_devices(self):
-
         home_id = self.stub.ListCirqueHomes(
             service_pb2.ListCirqueHomesRequest()).home_id[0]
 
